@@ -1,0 +1,504 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+body{
+    font: 15px/1.5 Arial, Helvetica,sans-serif;
+    padding:0;
+    margin:0;
+    background-color:#fff;
+}
+
+.container{
+    margin:auto;
+    overflow:hidden;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+
+header .highlight, 
+header .current a{
+    color:red;
+    font-weight:bold;
+}
+
+
+/* Header */
+
+.headerstrip {
+    background-color: #0f699e;
+    font-family: 'OpenSans-Regular';
+}
+
+.queries {
+    float: left;
+    padding: 5px 0;
+}
+.socialmedia {
+    float: right;
+    margin: 5px 0px;
+}
+
+.queries li, .socialmedia li {
+    display: inline;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+}
+
+.queries li a {
+    color: white;
+    text-decoration: none;
+}
+
+.queries .fa.fa-phone, .queries i.fa.fa-envelope{
+    color: #f67702;
+    padding-right: 0 10px;
+    padding: 0 10px 0px 0px;
+    cursor: pointer;
+}
+
+.socialmedia i.fa.fa-facebook,.socialmedia i.fa.fa-twitter,.socialmedia i.fa.fa-instagram,.socialmedia i.fa.fa-youtube {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.socialmedia i.fa.fa-twitter:hover,.socialmedia i.fa.fa-instagram:hover,.socialmedia i.fa.fa-youtube:hover {
+    background-color: aquamarine;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 3px;
+    color: black;
+    transition: 0.5s;
+}
+.socialmedia i.fa.fa-facebook:hover{
+    background-color: aquamarine;
+    border-radius: 25px;
+    font-size: 15px;
+    padding: 3px 7px;
+    color: black;
+    transition: 0.5s;
+
+}
+
+.menubar{
+    background-color: white;
+    padding: 10px;
+}
+.menu {
+    font-family: 'OpenSans-Regular';
+    font-weight: bold;
+    font-size: 17px;
+    position: relative;
+    float: right;
+}
+.menu li {
+    padding: 0 25px;
+    position: relative;
+    margin-top: 8px;
+}
+
+.menu li::after{
+    content: "|";
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.menu .nav-item::after{
+    border-right: 2px solid lightgrey;
+    content: "";
+    height: 33px;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.menu .nav-item:first-child::after{
+    display: none;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0f699e;
+}
+
+/*AbOUT*/
+.sectionstyle{
+    padding: 20px 0;
+}
+#about h2{
+    display: table;
+    font-family: 'OpenSans-ExtraBold';
+    color: #02bc9b;
+    font-size: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+#about h2::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #0f699e;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+.abt-content h3{
+    font-family: 'OpenSans-ExtraBold';
+    color: #0f699e;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 5px;
+}
+#about img{
+    margin: 0 auto;
+    display: table;
+}
+.abt-content p{
+    font-family: 'OpenSans-Regular';
+    padding: 5px;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 25px;
+}
+.readme a{
+    background-color: #02bc9b;
+    color: #fff;
+    padding: 10px;
+    float: right;
+    margin-top: 50px;
+    text-decoration: none;
+}
+.readme a:hover{
+    background-color: #0f699e;
+    color: #fff;
+    box-shadow: 1px 1px #000000;
+}
+.abt-content img{
+    margin: 0 auto;
+    display: table;
+}
+
+
+
+/*PRRDUCTS*/
+#product h2{
+    display: table;
+    font-family: 'OpenSans-ExtraBold';
+    color: #02bc9b;
+    font-size: 30px;
+    margin: 0 auto;
+    position: relative;
+}
+#product h2::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #0f699e;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+}
+#product p{
+    font-family: 'OpenSans-Regular';
+    padding: 10px 5px;
+    font-size: 15px;
+    line-height: 25px;
+    width: 70%;
+    margin: 0 auto;
+}
+#group{
+    padding: 20px 0;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #004873;
+}
+footer .row {
+    padding: 10px 0;
+}
+footer h2 {
+    color: white;
+    font-size: 22px;
+    font-family: 'OpenSans-ExtraBold';
+    border-left: 4px solid #f67702;
+    padding: 0px 15px;
+}
+ul.foot-ul {
+    padding: 14px 10px;
+}
+.foot-ul li {
+    padding: 8px;
+    position: relative;
+}
+.foot-ul li::before {
+    content: "-";
+    position: absolute;
+    top: 5px;
+    left: -10px;
+    color: white;
+}
+.foot-ul a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular';
+}
+.contact-ul{
+    padding: 14px 10px;
+    margin-left: -20px;
+}
+.contact-ul li {
+    padding: 8px;
+    border-bottom: 1px solid #696969;
+}
+
+.contact-ul i.fa.fa-map-marker,.contact-ul i.fa.fa-phone, .contact-ul i.fa.fa-envelope {
+    color: white;
+    font-size: 20px;
+}
+.contact-ul span{
+    padding: 0 15px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular';
+    line-height: 25px;
+    margin: 0 auto;
+    display: inline-table;
+}
+.reach-ul{
+    padding: 8px;
+    margin-left: -15px;
+}
+.reach-ul li {
+    padding: 8px;
+    position: relative;
+}
+input[type="text"],input[type="email"],textarea {
+    background-color: #fff;
+    border: none;
+    padding: 4px 10px;
+    width: 100%;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular';
+    color: black;
+}
+input[type="button"]{
+    background-color: #f67702;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    float: right;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular';
+}
+
+input[type="button"]:hover{
+    background-color: #fff;
+    color: #f67702;
+    box-shadow: 2px #f67702;
+    font-weight: bold;
+}
+.fields{
+    float: left;
+    font-size: 10px;
+    font-family: 'OpenSans-Regular';
+    color: #ffffff;
+}
+
+#copyright{
+    background: #02bc9b;
+    padding: 10px 0;
+
+}
+.copy{
+    float: left;
+    width: 80%;
+    font-size: 13px;
+    font-family: 'OpenSans-Regular';
+    color: #004873;
+}
+.power{
+    float: right;
+    color: #004873;
+    font-size: 13px;
+    font-family: 'OpenSans-Regular';
+}
+.power span a{
+    color:#ffffff;
+    font-size: 13px;
+    font-family: 'OpenSans-ExtraBold';
+    cursor: pointer;
+    text-decoration: none;
+}
+.pro-content p {
+    font-family: opensans-regular;
+    line-height: 28px;
+    color: #fff;
+    text-align: justify;
+}
+
+
+#contactpage h2{
+    display: table;
+    font-family: 'OpenSans-ExtraBold';
+    color: #02bc9b;
+    font-size: 30px;
+    position: relative;
+}
+#contactpage h2::before {
+    content: "";
+    width: 60px;
+    height: 4px;
+    background: #0f699e;    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.contact-content{
+    padding: 14px 10px;
+    margin-left: -20px;
+}
+.contact-content li {
+    padding: 8px;
+}
+
+.contact-content i.fa.fa-map-marker,.contact-content i.fa.fa-phone, .contact-content i.fa.fa-envelope {
+    color:  #0f699e;
+    font-size: 20px;
+
+}
+.contact-content span{
+    padding: 0 15px;
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-family: 'OpenSans-Regular';
+    line-height: 25px;
+    margin: 0 auto;
+    display: inline-table;
+}
+
+
+/* -- Back to Top-- */
+.back-to-top {
+    position: fixed;
+    right: 1%;
+    bottom: -7.5%;
+    height: 15px;
+    width: 40px;
+    padding: 3px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    color: transparent;
+    opacity: 0.5;
+    z-index: 3;
+    visibility: hidden;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.25s ease-in-out;
+    background-color: #858585;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+        text-decoration: none;
+    }
+
+    &:focus {
+        outline: thin dotted;
+    }
+}
+.back-to-top::before,
+.back-to-top::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top: 0;
+}
+.back-to-top::before {
+    top: -20px;
+    z-index: 4;
+    border-bottom: 20px solid #858585;
+}
+.back-to-top::after {
+    bottom: 0;
+    z-index: 5;
+    border-bottom: 20px solid #505050;
+}
+.back-to-top:hover,
+.back-to-top:focus {
+    height: 40px;
+    color: #212223;
+}
+.show-back-to-top {
+    display: block;
+    bottom: 1.25%;
+    visibility: visible;
+}
+
+@media(max-width: 768px){
+    .socialmedia {
+        float: none;
+        margin: 5px 5px;
+    }
+    .socialmedia li {
+        padding: 10px 5px;
+    }
+}
