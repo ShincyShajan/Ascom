@@ -210,7 +210,7 @@ header .current a{
     background-color: #02bc9b;
     color: #fff;
     padding: 10px;
-    float: right;
+    float: left;
     margin-top: 50px;
     text-decoration: none;
 }
